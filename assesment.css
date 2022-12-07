@@ -1,0 +1,105 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+button{
+    cursor: pointer;
+}
+.navleft>img{
+    width: 150px;
+    height: 50px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: skyblue;
+    padding: 0px 5px;
+}
+.navright>button{
+    width: 60px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.navright{
+    display: flex;
+    align-items: center;
+}
+.description{
+    display: grid;
+    grid-template-columns: 60vw 40vw;
+    background-image: linear-gradient(pink, rgb(100, 100, 220), skyblue, yellow);
+    margin-top: 30px;
+}
+.heading{
+    font-size: 4rem;
+}
+.descbtn{
+    width: 120px;
+    height: 50px;
+    padding: 5px;
+    margin: 50px;
+    background-color: rgb(97, 97, 236);
+    border-radius: 30px;
+}
+.descright{
+    padding: 100px 0px;
+}
+.card>img{
+    width: 150px;
+    height: 100px;
+}
+.card{
+    width: 180px;
+    height: 220px;
+    border: 2px solid black;
+    border-radius: 30px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 5px 5px 5px rgb(74, 68, 68);
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0px;
+}
+.card>button{
+    width: auto;
+    background-color: black;
+    color: white;
+    padding: 8px;
+    border-radius: 30px;
+}
+.card>p{
+    padding:0px 10px;
+}
+.card:hover{
+    box-shadow: 10px 10px 10px rgb(74, 68, 68);
+}
+
+@media(max-width:600px){
+    .navright{
+        display: none;
+    }
+    .descright{
+        display: none;
+    }
+    .description{
+        display: flex;
+        flex-direction: column;
+    }
+    .dummy{
+        background-image: url('./laptop.png');
+        background-size: 300px auto;
+        height: 120px;
+        background-repeat: no-repeat;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        margin: 10px;
+    }
+}
